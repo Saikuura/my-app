@@ -1,5 +1,8 @@
 import { Figtree } from "next/font/google";
 import "./globals.css";
+import { PageLayout } from "./components/layout/PageLayout";
+import Link from "next/link";
+import { Header } from "./components/navigation/Header";
 
 const inter = Figtree({ subsets: ["latin"] });
 
@@ -11,7 +14,13 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <Header />
+        <PageLayout>
+          {children}
+        </PageLayout>
+        <footer>FOOOOOOTER!</footer>
+      </body>
     </html>
   );
 }
