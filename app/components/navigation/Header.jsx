@@ -6,6 +6,9 @@ export const Header = () => {
       <nav className="flex gap-12">
         <Link href="/">Home</Link>
         <Link href="/about">About</Link>
+        <Link href="/cats">Katter</Link>
+        <Link href="/hest">Hester</Link>
+        <Link href="/reptiler">Reptiler</Link>
       </nav>
     </header>
   );
