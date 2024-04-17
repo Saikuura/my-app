@@ -3,6 +3,7 @@ import "./globals.css";
 import { PageLayout } from "./components/layout/PageLayout";
 import Link from "next/link";
 import { Header } from "./components/navigation/Header";
+import { Footer } from "./components/navigation/Footer";
 
 const inter = Figtree({ subsets: ["latin"] });
 
@@ -19,7 +20,7 @@ export default function RootLayout({ children }) {
         <PageLayout>
           {children}
         </PageLayout>
-        <footer>FOOOOOOTER!</footer>
+        <Footer />
       </body>
     </html>
   );
